@@ -1,0 +1,25 @@
+//
+//  lame4iOS-PrefixHeader.pch
+//  lame4iOS
+//
+//  Created by 晓童 韩 on 16/1/25.
+//  Copyright © 2016年 晓童 韩. All rights reserved.
+//
+
+#ifndef lame4iOS_PrefixHeader_pch
+#define lame4iOS_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//日志输出，用来匹配项目中的DDLog
+#ifdef DEBUG
+#define DDLogDebug(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+
+#endif /* lame4iOS_PrefixHeader_pch */
