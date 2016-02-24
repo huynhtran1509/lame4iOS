@@ -1,4 +1,4 @@
-##lame for iOS（）:
+##lame for iOS:
 >Support OS/Archs: 
 iphoneos:armv7, armv7s, arm64
 simulator:x86_64,i386
